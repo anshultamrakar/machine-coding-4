@@ -57,12 +57,14 @@ const Question = () => {
       <h2>Latest Post</h2>
       <div className='upvote_btn'>
       <ul className='Question_post'>
-      <div className='upvote_section'>
+ <div className='post_section'>
+    <div className='upvote_section'>
          <BiUpvote/> 
          <p>45</p>
          <AiFillCaretDown/>
         </div>
-         {forumData.posts.map(post => (
+        <div>
+        {forumData.posts.map(post => (
             <li className='post_items'>
                 <div className='post_profile'>
                  <img src = {post.picUrl} width= "30" height= "30"/>
@@ -86,6 +88,10 @@ const Question = () => {
             <br/>
             </li>
          ))}
+        </div>
+</div>
+      
+        
          </ul>
       </div>
        

@@ -49,6 +49,14 @@ body{
   
 }
 
+.post_section{
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+
+
 .post_items{
   list-style-type: none;
   display: flex;
